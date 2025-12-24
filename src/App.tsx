@@ -104,7 +104,7 @@ function App() {
             <Typewriter
               options={{
                 strings: [
-                  "Step Into The Future Of Trading Excellence Led By Professional Traders On",
+                  "Step Into The Future Of Trading Excellence Led By Professional Traders",
                 ],
                 autoStart: true,
                 loop: true,

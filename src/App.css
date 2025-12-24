@@ -22,6 +22,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width:768px){
+  .App{
+    align-items: start;
+    padding-top: 32px;
+  }
+}
+
 .App::before{
   content: '';
   position: absolute;
@@ -423,6 +430,19 @@
   border-radius: 9999px;
 }
 
+@media screen and (max-width:768px) {
+  .action{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding:0.2rem
+  }
+
+  /* .action:hover .action-icon {
+  transform: scale(1.0) translate3d(0px, -12px, 0px);
+} */
+  
+}
+
 .action-icon {
   height: 100%;
   width: 100%;
@@ -509,6 +529,7 @@
   transform: scale(1.4) translate3d(0px, -12px, 0px);
 }
 
+
 .action:hover::after,
 .action-content::after {
   height: var(--sz-light-hover);
@@ -538,6 +559,25 @@
 .action:hover .action-content::before {
   transform: translateY(0px);
 }
+
+    @media screen and (max-width:768px) {
+      .action:hover .action-icon{
+      transform: scale(1.1) translate3d(0px, -12px, 0px);
+      }
+.action:hover .action-content {
+  top: calc(-100% - 8px);
+  
+}
+
+.action:hover::after,
+.action-content::after {
+  height: 42px;
+  width: 42px;
+ }
+.action-content::before {
+font-size: 14px;
+}
+    }
 
 /* Text Reveal Animation */
 .tagline {
